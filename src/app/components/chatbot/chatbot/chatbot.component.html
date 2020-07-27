@@ -1,0 +1,30 @@
+<div class="chatbot-wrapper">
+    <div #messageScreen class="chat__wrapper">
+        <div class="chat__message-holder" [class.from-chatbot]="message.fromChatbot" *ngFor="let message of (chat$ | async)">
+            <div class="chat__message">
+                {{message.text}}
+            </div>
+        </div>
+        <div class="chat__type-status type-dots" *ngIf="showTypingIcon">
+            <div class="type-dots__wrapper">
+                <div class="type-dots__dot"></div>
+                <div class="type-dots__dot"></div>
+                <div class="type-dots__dot"></div>
+            </div>
+        </div>
+    </div>
+    <ng-container *ngIf="(endConversation$ | async) else showOptions">
+        <button (click)="resetChat()">Opnieuw beginnen</button>
+        <ng-content></ng-content>
+    </ng-container>
+    <ng-template #showOptions>
+    <div class="chat__choices chat-options">
+        <div class="chat-options__title">
+            Kies een antwoord
+            </div>
+            <div class="chat__answer-options-wrapper" [class.answer-is-chosen]="chatbotIsTyping$ | async">
+                <div class="chat__answer-option" *ngFor="let option of (conversationOptions$ | async)" (click)="answerChat(option)">{{option.text}}</div>
+            </div>
+        </div>
+    </ng-template>
+</div>

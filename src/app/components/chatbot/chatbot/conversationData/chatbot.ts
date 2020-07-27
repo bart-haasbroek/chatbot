@@ -1,0 +1,110 @@
+import { ChatbotMessage } from './chatmessage.interface';
+
+export const ChatBoxStartinQuestion: ChatbotMessage = {
+	fromChatbot: true,
+	id: 999,
+	isLast: false,
+	nextOptionsId: 0,
+	text: 'Welkom! Mijn naam is Robbie robot en ik ben hier om je een aantal vragen te stellen. Aan de hand van uw antwoorden kan ik u helpen om een goede keuze te maken om u zo verder te helpen. Waarmee kan ik u van dienst zijn?',
+};
+
+export const ChatbotResponses: any = {
+	1: {
+		fromChatbot: true,
+		id: 1,
+		isLast: false,
+		nextOptionsId: 1,
+		text: 'Wat leuk dat u iets wilt ondernemen! Wat zoekt u precies voor uitje?',
+	},
+	2: {
+		fromChatbot: true,
+		id: 2,
+		isLast: false,
+		nextOptionsId: 2,
+		text: 'Iets avontuurlijks dus! Ik heb een aantal sugesties in de buurt gevonden wat u misschien interessant vind.',
+	},
+	3: {
+		fromChatbot: true,
+		id: 3,
+		isLast: false,
+		nextOptionsId: 3,
+		text: 'U wilt dus lekker even ontspannen? Hiervoor heb ik een aantal uitjes in de buurt gevonden wat u misschien wel aanspreekt.',
+	},
+	4: {
+		fromChatbot: true,
+		id: 4,
+		isLast: false,
+		nextOptionsId: 4,
+		text: 'Een goede keuze! Kunnen we u informatie opsturen via een email?',
+	},
+	5: {
+		fromChatbot: true,
+		id: 5,
+		isLast: true,
+		nextOptionsId: 1,
+		text: 'Staat er niks bij wat u zoekt? U kunt natuurlijk altijd contact opnemen met de klantenservice voor meer informatie. Zij zijn alle dagen te bereiken van 7.00 tot 21.00 op het volgende telefoonnummer: 0900-123456. Bedankt dat u gebruikt hebt gemaakt van de Robbie robot service! Mocht u meer vragen hebben dan hoor ik het graag! Fijne dag',
+	},
+	6: {
+		fromChatbot: true,
+		id: 6,
+		isLast: false,
+		nextOptionsId: 3,
+		text: 'Nieuwe vraag van de robot6',
+	},
+	7: {
+		fromChatbot: true,
+		id: 7,
+		isLast: true,
+		nextOptionsId: 1,
+		text: 'We hebben je aanvraag ontvangen en sturen gelijk meer informatie op! Bedankt dat u gebruikt hebt gemaakt van de Robbie robot service! Mocht u meer vragen hebben dan hoor ik het graag! Fijne dag',
+	},
+	8: {
+		fromChatbot: true,
+		id: 8,
+		isLast: true,
+		nextOptionsId: 2,
+		text: 'Dat is ook helemaal goed natuurlijk! Bedankt dat u gebruikt hebt gemaakt van de Robbie robot service! Mocht u meer vragen hebben dan hoor ik het graag! Fijne dag',
+	},
+	9: {
+		fromChatbot: true,
+		id: 9,
+		isLast: true,
+		nextOptionsId: 1,
+		text: 'Dat kan zeker! Zij zijn alle dagen te bereiken van 7.00 tot 21.00 op het volgende telefoonnummer: 0900-123456. Bedankt dat u gebruikt hebt gemaakt van de Robbie robot service! Mocht u meer vragen hebben dan hoor ik het graag! Fijne dag',
+	},
+	10: {
+		fromChatbot: true,
+		id: 10,
+		isLast: false,
+		nextOptionsId: 5,
+		text: 'Waar bent u precies naar op zoek?',
+	},
+	11: {
+		fromChatbot: true,
+		id: 11,
+		isLast: false,
+		nextOptionsId: 6,
+		text: 'Er zijn genoeg lunchrooms in de buurt! Wat trekt u het meest aan?',
+	},
+	12: {
+		fromChatbot: true,
+		id: 11,
+		isLast: false,
+		nextOptionsId: 7,
+		text: 'Lekker uit eten dus! Naar welk restaurant bent u op zoek?',
+	},
+	13: {
+		fromChatbot: true,
+		id: 13,
+		isLast: false,
+		nextOptionsId: 8,
+		text: 'U wilt spontaan een drankje drinken? Wat dacht u van de volgende zaken',
+	},
+	14: {
+		fromChatbot: true,
+		id: 14,
+		isLast: false,
+		nextOptionsId: 9,
+		text: 'Waar wilt u meer over weten?',
+	},
+};
